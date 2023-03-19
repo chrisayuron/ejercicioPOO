@@ -6,11 +6,17 @@
 
 html,
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
+    flex-grow: 1;
     width: 90vw;
     padding: 1vh;
     display: flex;
@@ -81,3 +87,11 @@ input {
     border: none;
     width: fit-content;
 }
+
+footer {
+    flex-shrink: 0;
+    background-color: blue;
+    color:white;
+    display: flex;
+    justify-content: center;
+  }

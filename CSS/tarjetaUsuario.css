@@ -8,8 +8,14 @@
         height: 100%;
     }
 
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
     .container{
         /* border: solid; */
+        flex-grow: 1;
         width: 100%;
         height: 100%;
         display: grid;
@@ -66,4 +72,12 @@
     .button{
         height: 10vh;
         width: 20vw;
+    }
+
+    footer{
+        flex-shrink: 0;
+        background-color: blue;
+        color:white;
+        display: flex;
+        justify-content: center;
     }
